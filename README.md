@@ -20,10 +20,11 @@ bypop(account, password, directory)
 
 ```python
 from cstnetdown.crawl import prepare, start
-driver = prepare(directory)
+driver = prepare(temp_directory)
 # Allow "Enhanced Safe Browsing / 增强型保护" in Chrome here
 # Log in UCAS e-mail service in the browser here
 # Open first e-mail in some folder (e.g., Inbox)
 start(driver)
+convert(temp_directory, directory)
 ```
-其中 `directory` 参数意义同前。
+其中 `directory` 参数意义同前，而 `temp_directory` 为一临时目录，用以接收浏览器下载的邮件，将在执行 `convert` 函数后清空。
