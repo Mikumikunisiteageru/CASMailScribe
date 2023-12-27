@@ -1,4 +1,4 @@
-# cstnetdown/crawl.py
+# casmailscribe/crawl.py
 
 import glob
 import os
@@ -6,7 +6,7 @@ import time
 import zmail
 from selenium import webdriver
 from chromedriver_py import binary_path
-from cstnetdown.bypop import save_mail
+from casmailscribe.bypop import save_mail
 
 def prepare(directory):
 	options = webdriver.ChromeOptions()
