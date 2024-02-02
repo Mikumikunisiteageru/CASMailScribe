@@ -19,7 +19,7 @@ bypop(account, password, directory)
 ## 国科大邮箱
 
 ```python
-from casmailscribe.crawl import prepare, start
+from casmailscribe.crawl import prepare, start, convert
 driver = prepare(temp_directory)
 # Allow "Enhanced Safe Browsing / 增强型保护" in Chrome here
 # Log in UCAS e-mail service in the browser here
